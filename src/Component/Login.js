@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useGoogleLogin } from "@react-oauth/google";
 import GmailMessages from "./GmailMessages";
 import { FcGoogle } from "react-icons/fc";
+import { BsBoxArrowInUpLeft } from "react-icons/bs";
 import "./Login.css";
 
 const Login = () => {
@@ -48,7 +49,8 @@ const Login = () => {
               justifyContent: "center"
             }}>
             <div style={{display:"flex", justifyContent:"center"}}>
-            <FcGoogle style={{minHeight:'25vh',minWidth:'30vh',cursor:'pointer'}} onClick={() => logout()}/>
+            <BsBoxArrowInUpLeft
+            style={{minHeight:'25vh',minWidth:'30vh',cursor:'pointer'}} onClick={() => logout()}/>
             </div>
             
             </div>
